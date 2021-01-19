@@ -33,6 +33,7 @@ body{
 .grid{
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .grid h4{
@@ -62,4 +63,35 @@ body{
 
 .grid-cards-inner p{
     padding-top: 10px;
+}
+
+@media(max-width:1200px) {
+    .grid{
+        max-width: 1000px;
+        margin: 0 20px;
+    }
+
+    .grid-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:850px){
+    .grid{
+        max-width: 700px;
+    }
+
+    .grid-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .title h1{
+        width: auto;
+    }
+
+    .grid-cards{
+        grid-template-columns: 1fr;
+    }
 }
