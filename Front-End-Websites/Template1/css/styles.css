@@ -160,3 +160,10 @@ section {
 .portfolio-item:hover img {
   transform: scale(1.1);
 }
+
+.feature .icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  font-size: 34px;
+}
