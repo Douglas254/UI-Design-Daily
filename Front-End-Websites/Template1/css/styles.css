@@ -260,3 +260,16 @@ section {
   height: 35px;
   margin-top: 30px;
 }
+
+form .form-control {
+  border-radius: 0;
+}
+
+form .form-control:focus {
+  box-shadow: none;
+  border-color: #e93b81;
+}
+
+#cta {
+  background-color: #e93b81;
+}
