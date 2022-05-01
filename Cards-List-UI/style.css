@@ -13,6 +13,8 @@ body{
 .title{
     text-align: center;
     padding: 50px 0px;
+    display: grid;
+    place-items: center;
 }
 
 .title h1{
@@ -52,9 +54,12 @@ body{
     border-radius: 5px;
 
 }
-
+.grid-cards-inner:hover{
+    cursor: pointer;
+}
 .grid-cards-inner{
     display: flex;
+    box-shadow: 5px 5px 5px 0px #8360f5;
 }
 
 .grid-cards-inner i{
@@ -94,4 +99,62 @@ body{
     .grid-cards{
         grid-template-columns: 1fr;
     }
+}
+.container-3 {
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.container-3 img{
+   width: 20px;
+   height: 20px;
+}
+.container-3 input#search {
+    max-width: 400px;
+    height: 2.5rem;
+    background: #333;
+    color: #eceff1;
+    border: none;
+    float: left;
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: 0 0 0 5px;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+.container-3 input::placeholder{
+   color: #eceff1;
+   font-size: .8rem;
+   position: relative;
+   bottom: 3px;
+}
+
+.container-3 button.icon {
+    position: absolute;
+    border: none;
+    background: none;
+    color: #eceff1;
+    height: 2rem;
+    width: 3rem;
+    font-size: .6rem;
+    line-height: 1.5em;
+    border-radius: 0 5px 5px 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    padding-top: 9px;
+}
+.container-3 input#search:hover + button.icon, .container-3 button.icon:hover, .container-3 input#search:focus + button.icon, .container-3 input#search:active + button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -3rem;
+}
+.container-3 input#search:hover, .container-3 input#search:focus, .container-3 input#search:active {
+    outline: none;
+    padding-right: 3rem;
+}
+.container-3 button.icon:hover, .container-3 button.icon:active {
+    background-color: var(--main-color);
+    color: #eceff1;
+    cursor: pointer;
 }
