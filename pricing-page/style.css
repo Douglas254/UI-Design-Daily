@@ -137,7 +137,9 @@ body {
   cursor: pointer;
   width: 150px;
 }
-
+.cards .pro .select option{
+  color: var(--bg-color);
+}
 .cards .pro small {
   color: var(--dark-pink);
 }
